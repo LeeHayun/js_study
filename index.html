@@ -6,11 +6,182 @@
   </head>
   <body>
     <script src="util.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!--
     <h1>헬로 월드!</h1>
     이 애플리케이션은 node <script>document.write(process.version)</script>,
     Chrome <script>document.write(process.versions.chrome)</script>,
     Electron <script>document.write(process.versions.electron)</script>을 사용합니다.
     <br></br>
+    -->
     <img name="pic" onclick="bread_click()" src="img/Bakery/1.png" width="100" height="100">
+    <div>
+      <table style="margin: auto">
+        <tr>
+          <td valign="top" style="text-align:center">
+            <div id="나무꾼의 집" class="building" style="background-image: url(img/Lumberjack\'s\ Lodge/building.png)" ach-tooltip="나무꾼의 집"></div>
+            <img src="img/Lumberjack's Lodge/1.png" width=30 height=30>
+            <img src="img/Lumberjack's Lodge/2.png" width=30 height=30>
+            <img src="img/Lumberjack's Lodge/3.png" width=30 height=30>
+            <img src="img/Lumberjack's Lodge/1.png" width=30 height=30>
+            <img src="img/Lumberjack's Lodge/2.png" width=30 height=30>
+            <img src="img/Lumberjack's Lodge/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="각설탕 채설장" class="building" style="background-image: url(img/Sugar\ Quarry/building.png)" ach-tooltip="각설탕 채설장"></div>
+            <img src="img/Sugar Quarry/1.png" width=30 height=30>
+            <img src="img/Sugar Quarry/2.png" width=30 height=30>
+            <img src="img/Sugar Quarry/3.png" width=30 height=30>
+            <img src="img/Sugar Quarry/1.png" width=30 height=30>
+            <img src="img/Sugar Quarry/2.png" width=30 height=30>
+            <img src="img/Sugar Quarry/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="젤리빈 농장" class="building" style="background-image: url(img/Jellybean\ Farm/building.png)" ach-tooltip="젤리빈 농장"></div>
+            <img src="img/Jellybean Farm/1.png" width=30 height=30>
+            <img src="img/Jellybean Farm/2.png" width=30 height=30>
+            <img src="img/Jellybean Farm/3.png" width=30 height=30>
+            <img src="img/Jellybean Farm/1.png" width=30 height=30>
+            <img src="img/Jellybean Farm/2.png" width=30 height=30>
+            <img src="img/Jellybean Farm/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="비스킷 풍차" class="building" style="background-image: url(img/Windmill/building.png)" ach-tooltip="비스킷 풍차"></div>
+            <img src="img/Windmill/1.png" width=30 height=30>
+            <img src="img/Windmill/2.png" width=30 height=30>
+            <img src="img/Windmill/3.png" width=30 height=30>
+            <img src="img/Windmill/1.png" width=30 height=30>
+            <img src="img/Windmill/2.png" width=30 height=30>
+            <img src="img/Windmill/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="젤리베리 과수원" class="building" style="background-image: url(img/Jellyberry\ Orchard/building.png)" ach-tooltip="젤리베리 과수원"></div>
+            <img src="img/Jellyberry Orchard/1.png" width=30 height=30>
+            <img src="img/Jellyberry Orchard/2.png" width=30 height=30>
+            <img src="img/Jellyberry Orchard/3.png" width=30 height=30>
+            <img src="img/Jellyberry Orchard/1.png" width=30 height=30>
+            <img src="img/Jellyberry Orchard/2.png" width=30 height=30>
+            <img src="img/Jellyberry Orchard/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="우유 우물" class="building" style="background-image: url(img/Milk\ Well/building.png)" ach-tooltip="우유 우물"></div>
+            <img src="img/Milk Well/1.png" width=30 height=30>
+            <img src="img/Milk Well/2.png" width=30 height=30>
+            <img src="img/Milk Well/3.png" width=30 height=30>
+            <img src="img/Milk Well/1.png" width=30 height=30>
+            <img src="img/Milk Well/2.png" width=30 height=30>
+            <img src="img/Milk Well/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="솜사탕양 목장" class="building" style="background-image: url(img/Cotton\ Candy\ Ranch/building.png)" ach-tooltip="솜사탕양 목장"></div>
+            <img src="img/Cotton Candy Ranch/1.png" width=30 height=30>
+            <img src="img/Cotton Candy Ranch/2.png" width=30 height=30>
+            <img src="img/Cotton Candy Ranch/3.png" width=30 height=30>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" style="text-align:center">
+            <div id="뚝딱 대장간" class="building" style="background-image: url(img/Smithy/building.png)" ach-tooltip="뚝딱 대장간"></div>
+            <img src="img/Smithy/1.png" width=28 height=28>
+            <img src="img/Smithy/2.png" width=28 height=28>
+            <img src="img/Smithy/3.png" width=28 height=28>
+            <img src="img/Smithy/4.png" width=28 height=28>
+            <img src="img/Smithy/5.png" width=28 height=28>
+            <img src="img/Smithy/6.png" width=28 height=28>
+            <img src="img/Smithy/7.png" width=28 height=28>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="설탕몽땅 잼가게" class="building" style="background-image: url(img/Jammery/building.png)" ach-tooltip="설탕몽땅 잼가게"></div>
+            <img src="img/Jammery/1.png" width=30 height=30>
+            <img src="img/Jammery/2.png" width=30 height=30>
+            <img src="img/Jammery/3.png" width=30 height=30>
+            <img src="img/Jammery/4.png" width=30 height=30>
+            <img src="img/Jammery/5.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="롤케이크 공작소" class="building" style="background-image: url(img/Carpentry\ Shop/building.png)" ach-tooltip="롤케이크 공작소"></div>
+            <img src="img/Carpentry Shop/1.png" width=30 height=30>
+            <img src="img/Carpentry Shop/2.png" width=30 height=30>
+            <img src="img/Carpentry Shop/3.png" width=30 height=30>
+            <img src="img/Carpentry Shop/4.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="갓 구운 빵집" class="building" style="background-image: url(img/Bakery/building.png)" ach-tooltip="갓 구운 빵집"></div>
+            <img src="img/Bakery/1.png" width=30 height=30>
+            <img src="img/Bakery/2.png" width=30 height=30>
+            <img src="img/Bakery/3.png" width=30 height=30>
+            <img src="img/Bakery/4.png" width=30 height=30>
+            <img src="img/Bakery/5.png" width=30 height=30>
+            <img src="img/Bakery/6.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="잼파이 레스토랑" class="building" style="background-image: url(img/Jampie\ Diner/building.png)" ach-tooltip="잼파이 레스토랑"></div>
+            <img src="img/Jampie Diner/1.png" width=30 height=30>
+            <img src="img/Jampie Diner/2.png" width=30 height=30>
+            <img src="img/Jampie Diner/3.png" width=30 height=30>
+            <img src="img/Jampie Diner/4.png" width=30 height=30>
+            <img src="img/Jampie Diner/5.png" width=30 height=30>
+            <img src="img/Jampie Diner/6.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="토닥토닥 도예공방" class="building" style="background-image: url(img/Artisan\'s\ Workshop/building.png)" ach-tooltip="토닥토닥 도예공방"></div>
+            <img src="img/Artisan's Workshop/1.png" width=30 height=30>
+            <img src="img/Artisan's Workshop/2.png" width=30 height=30>
+            <img src="img/Artisan's Workshop/3.png" width=30 height=30>
+            <img src="img/Artisan's Workshop/4.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="행복한 꽃가게" class="building" style="background-image: url(img/Flower\ Shop/building.png)" ach-tooltip="행복한 꽃가게"></div>
+            <img src="img/Flower Shop/1.png" width=30 height=30>
+            <img src="img/Flower Shop/2.png" width=30 height=30>
+            <img src="img/Flower Shop/3.png" width=30 height=30>
+            <img src="img/Flower Shop/4.png" width=30 height=30>
+            <img src="img/Flower Shop/5.png" width=30 height=30>
+            <img src="img/Flower Shop/6.png" width=30 height=30>
+          </td>
+        </tr>
+        <tr>
+          <td valign="top" style="text-align:center">
+            <div id="밀키우유 가공소" class="building" style="background-image: url(img/Dairy\ Factory/building.png)" ach-tooltip="밀키우유 가공소"></div>
+            <img src="img/Dairy Factory/1.png" width=30 height=30>
+            <img src="img/Dairy Factory/2.png" width=30 height=30>
+            <img src="img/Dairy Factory/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="카페 라떼" class="building" style="background-image: url(img/Latte\ Cafe/building.png)" ach-tooltip="카페 라떼"></div>
+            <img src="img/Latte Cafe/1.png" width=30 height=30>
+            <img src="img/Latte Cafe/2.png" width=30 height=30>
+            <img src="img/Latte Cafe/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="러블리 인형공방" class="building" style="background-image: url(img/Toy\ Store/building.png)" ach-tooltip="러블리 인형공방"></div>
+            <img src="img/Toy Store/1.png" width=30 height=30>
+            <img src="img/Toy Store/2.png" width=30 height=30>
+            <img src="img/Toy Store/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="오크통 쉼터" class="building" style="background-image: url(img/Barrel\ Inn/building.png)" ach-tooltip="오크통 쉼터"></div>
+            <img src="img/Barrel Inn/1.png" width=30 height=30>
+            <img src="img/Barrel Inn/2.png" width=30 height=30>
+            <img src="img/Barrel Inn/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="퐁 드 파티세리" class="building" style="background-image: url(img/Maison\ du\ Cake/building.png)" ach-tooltip="퐁 드 파티세리"></div>
+            <img src="img/Maison du Cake/1.png" width=30 height=30>
+            <img src="img/Maison du Cake/2.png" width=30 height=30>
+            <img src="img/Maison du Cake/3.png" width=30 height=30>
+          </td>
+          <td valign="top" style="text-align:center">
+            <div id="살랑 드 쥬얼리" class="building" style="background-image: url(img/Jewelry\ Salon/building.png)" ach-tooltip="살랑 드 쥬얼리"></div>
+            <img src="img/Jewelry Salon/1.png" width=30 height=30>
+            <img src="img/Jewelry Salon/2.png" width=30 height=30>
+            <img src="img/Jewelry Salon/3.png" width=30 height=30>
+          </td>
+          <td valign="top">
+            
+          </td>
+        </tr>
+      </table>
+    </div>
   </body>
 </html>
